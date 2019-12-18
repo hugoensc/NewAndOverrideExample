@@ -6,7 +6,16 @@ namespace NewAndOverrideExample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BaseClass bc = new BaseClass();
+            DerivedClass dc = new DerivedClass();
+            BaseClass bcdc = new DerivedClass();
+
+            bc.Method1();
+            bc.Method2();
+            dc.Method1();
+            dc.Method2();
+            bcdc.Method1();
+            bcdc.Method2();
         }
     }
 }
